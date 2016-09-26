@@ -34,7 +34,7 @@
 				if( empty($_GET['edit']) ) {
 					
 					$sde_exists = $wpdb->get_row( 
-						$wpdb->prepare( 'SELECT COUNT(sde_id) FROM ' . $sde_tbl . ' WHERE plan_id = %d', $plan_id ) 
+						$wpdb->prepare( 'SELECT sde_id FROM ' . $sde_tbl . ' WHERE plan_id = %d', $plan_id ) 
 					);
 					
 					if(!$sde_exists) {
