@@ -1,6 +1,6 @@
 # konnichiwa-specific-date-expiration
 
-Konnichiwa! Specific Date Expiration is a WordPress plugin that makes it possible for subscriptions to expire on a specific admin-defined date. Tested with Konnichiwa! 0.7.6.
+Konnichiwa! Specific Date Expiration is a WordPress plugin that makes it possible for subscriptions to expire on a specific admin-defined date. Tested with Konnichiwa! 0.7.7.1.
 
 == Description ==
 
