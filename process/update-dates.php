@@ -45,9 +45,9 @@
 	 $subs_results = $wpdb->get_results( 'SELECT COUNT(id) FROM ' . $subs_tbl . ' WHERE expires <= CURDATE()' );
 	 if($subs_results) {
 		 //Update query. To delete subs, comment below
-		 //$query = $wpdb->prepare( 'UPDATE ' . $subs_tbl . ' SET status = %d WHERE expires <= CURDATE()', 2 );
+		 $query = $wpdb->prepare( 'UPDATE ' . $subs_tbl . ' SET status = %d WHERE expires <= CURDATE()', 2 );
 		 //For delete query, comment the above and uncomment code below:
-		 $query = "DELETE FROM $subs_tbl WHERE expires <= CURDATE()";
+		 //$query = "DELETE FROM $subs_tbl WHERE expires <= CURDATE()";
 		 $wpdb->query($query);
 	 }
  } 
