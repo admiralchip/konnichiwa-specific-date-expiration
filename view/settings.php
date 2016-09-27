@@ -65,9 +65,8 @@ function ad_konn_sde() {
 			</tr>
 			<?php 
 				$plans_results = $wpdb->get_results(
-					$wpdb->prepare( 
-						"SELECT $plans_tbl.id, $plans_tbl.name, $sde_tbl.plan_id, $sde_tbl.sde_id, $sde_tbl.specific_date FROM $plans_tbl, $sde_tbl WHERE %d = %d", $plans_tbl.'.id', $sde_tbl.'.plan_id'
-					)
+					"SELECT $plans_tbl.id, $plans_tbl.name, $sde_tbl.plan_id, $sde_tbl.sde_id, $sde_tbl.specific_date FROM $plans_tbl, $sde_tbl WHERE $plans_tbl.id = $sde_tbl.plan_id"
+					
 				);
 				if( $plans_results ) {
 					foreach( $plans_results as $results ) {
