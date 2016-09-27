@@ -16,7 +16,7 @@ Set specific expiration dates for your subscription plans (eg. 2016-07-23).
 
 *  The subscription duration of the subscription plan set in the main Konnichiwa! settings will be ignored and the expiration date that you defined will be used instead.
 
-*  Includes a fix to a bug that tells a user who has an active subscription that their subscription is expired. Expired subscriptions are CANCELLED database periodically. With this, you don't need to use the Konnichiwa! Handle Expired Subscriptions plugin / snippet.
+*  Includes a fix to a bug that tells a user who has an active subscription that their subscription is expired. Expired subscriptions are CANCELLED periodically. With this, you don't need to use the Konnichiwa! Handle Expired Subscriptions plugin / snippet. It could be adapted to DELETE expired subscriptions instead.
 
 *  Konnichiwa! Membership plugin must be installed in order to use it.
 
